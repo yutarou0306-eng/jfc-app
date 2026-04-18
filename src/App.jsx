@@ -105,7 +105,7 @@ export default function JFCApp() {
           </div>
           {/* タイトル */}
           <div style={{ flex: 1 }}>
-            <div style={{ fontSize: 9, color: "rgba(255,255,255,0.6)", fontWeight: 700, letterSpacing: "0.2em", fontFamily: "'Oswald', sans-serif" }}>JUNIOR FOOTBALL CLUB</div>
+            <div style={{ fontSize: 9, color: "rgba(255,255,255,0.6)", fontWeight: 700, letterSpacing: "0.2em", fontFamily: "'Oswald', sans-serif" }}>MANILA JAPANESE FOOTBALL CLUB</div>
             <div style={{ fontSize: 22, fontWeight: 700, color: "white", fontFamily: "'Oswald', sans-serif", letterSpacing: "0.05em", lineHeight: 1.1 }}>JFC MEMBERS</div>
           </div>
           {/* 日本国旗ミニ */}
@@ -133,10 +133,10 @@ export default function JFCApp() {
             {/* Stats */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
               {[
-                { label: "SQUAD", value: `${members.length}`, unit: "名", color: JPN_BLUE },
-                { label: "FEES", value: `${paidCount}/${fees.length}`, unit: "名", color: JPN_RED },
+                { label: "部員", value: `${members.length}`, unit: "名", color: JPN_BLUE },
+                { label: "部費", value: `${paidCount}/${fees.length}`, unit: "名", color: JPN_RED },
                 { label: "NEWS", value: `${announcements.length}`, unit: "件", color: JPN_GOLD },
-                { label: "MATCHES", value: `${events.filter(e=>e.type==="試合").length}`, unit: "件", color: "#555" },
+                { label: "試合情報", value: `${events.filter(e=>e.type==="試合").length}`, unit: "件", color: "#555" },
               ].map((s, i) => (
                 <div key={i} style={{ background: "white", borderRadius: 8, padding: 16, boxShadow: "0 1px 6px rgba(26,58,143,0.07)", borderTop: `3px solid ${s.color}` }}>
                   <div className="eng" style={{ fontSize: 9, color: "#aab4cc", fontWeight: 700, marginBottom: 4 }}>{s.label}</div>
