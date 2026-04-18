@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const LOGO_URL = "/logo.jpg"; 
+const LOGO_URL = "/logo.jpg";
 
 const members = [
   { id: 1, name: "田中 太郎", name_roman: "TANAKA TARO", grade: "小4", position: "FW", parent_name: "田中 一郎", emergency_phone: "090-1234-5678", coach: false, paid: true },
