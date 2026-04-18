@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const LOGO_URL = "/logo.png"; // ロゴ画像をsrcフォルダに入れた場合のパス
+const LOGO_URL = "/logo.jpg"; 
 
 const members = [
   { id: 1, name: "田中 太郎", name_roman: "TANAKA TARO", grade: "小4", position: "FW", parent_name: "田中 一郎", emergency_phone: "090-1234-5678", coach: false, paid: true },
@@ -57,7 +57,7 @@ export default function JFCApp() {
 
   const tabs = [
     { id: "home", label: "HOME", icon: "🏠" },
-    { id: "members", label: "SQUAD", icon: "👥" },
+    { id: "members", label: "部員", icon: "👥" },
     { id: "news", label: "NEWS", icon: "📢" },
     { id: "schedule", label: "日程", icon: "📅" },
     { id: "fees", label: "会費", icon: "💴" },
