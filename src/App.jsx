@@ -136,7 +136,7 @@ export default function JFCApp() {
                 { label: "部員", value: `${members.length}`, unit: "名", color: JPN_BLUE },
                 { label: "部費", value: `${paidCount}/${fees.length}`, unit: "名", color: JPN_RED },
                 { label: "NEWS", value: `${announcements.length}`, unit: "件", color: JPN_GOLD },
-                { label: "試合情報", value: `${events.filter(e=>e.type==="試合").length}`, unit: "件", color: "#555" },
+                { label: "試合日程", value: `${events.filter(e=>e.type==="試合").length}`, unit: "件", color: "#555" },
               ].map((s, i) => (
                 <div key={i} style={{ background: "white", borderRadius: 8, padding: 16, boxShadow: "0 1px 6px rgba(26,58,143,0.07)", borderTop: `3px solid ${s.color}` }}>
                   <div className="eng" style={{ fontSize: 9, color: "#aab4cc", fontWeight: 700, marginBottom: 4 }}>{s.label}</div>
